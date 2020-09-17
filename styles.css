@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+  padding: 1.5em;
+  margin: auto;
+  width: 85%;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header nav .logo img {
+  width: 48px;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav ul li {
+  padding: 1.25em;
+}
+
+body header nav ul li a {
+  color: #353535;
+  text-decoration: none;
+}
+
+body header nav ul li a:hover {
+  color: #284B63;
+  cursor: pointer;
+}
+
+body header nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #284B63;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+body header nav ul li a:hover::after {
+  width: 100%;
+}
+
+body main .name {
+  color: #284B63;
+  cursor: pointer;
+}
+
+body main .main-info {
+  height: 100vh;
+  margin: 2em 0;
+}
+
+body main .main-info h1 {
+  font-size: 3em;
+  padding: 4em 0 .5em 0;
+}
+
+body main .main-info .get-in-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25em;
+  padding: 1.5em 0;
+}
+
+body main .main-info .get-in-touch img {
+  width: 24px;
+  margin: 0 0.5em;
+}
+
+body main .main-info .get-in-touch a {
+  text-decoration: none;
+  color: #284B63;
+  font-weight: bold;
+}
+
+body main .main-info .get-in-touch a:hover {
+  cursor: pointer;
+}
+
+body main .main-info .get-in-touch a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #284B63;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+body main .main-info .get-in-touch a:hover::after {
+  width: 100%;
+}
+
+body main .main-info ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .main-info ul li img {
+  width: 32px;
+  padding-right: 1em;
+}
+
+body main .about-me {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .about-me h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: right;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-size: 1.25em;
+  color: #284B63;
+  padding: 0 2em;
+  text-transform: uppercase;
+}
+
+body main .about-me .about-me-text {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-size: 1em;
+}
+
+body main .about-me .about-me-text p {
+  margin-bottom: 1em;
+}
+
+body main .skills {
+  margin: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .skills h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: right;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-size: 1.25em;
+  color: #284B63;
+  padding: 0 2em;
+  text-transform: uppercase;
+}
+
+body main .skills .skills-text {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .skills .skills-text ul {
+  list-style-type: none;
+  padding-right: 2em;
+}
+
+body main .skills .skills-text ul li {
+  font-size: 1em;
+  padding: .25em 0;
+}
+
+body main .skills .skills-text ul li:nth-of-type(1) {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0;
+}
+
+body main .my-work {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .my-work h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: right;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-size: 1.25em;
+  color: #284B63;
+  padding: 0 2em;
+  text-transform: uppercase;
+}
+
+body main .my-work .my-work-text {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-size: 1.25em;
+}
+
+body main .my-work .my-work-text article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100vw;
+  margin-bottom: 1.25em;
+}
+
+body main .my-work .my-work-text article * {
+  padding: .5em 0;
+  font-size: 1em;
+}
+
+body main .my-work .my-work-text article h3 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+body main .my-work .my-work-text article .links {
+  padding: 0;
+  margin: 0;
+}
+
+body main .my-work .my-work-text article .links li {
+  padding: 0 .5em 0 0;
+}
+
+body main .my-work .my-work-text article .links li a img {
+  width: 24px;
+}
+
+body main .my-work .my-work-text article p {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: .75em;
+}
+
+body main .my-work .my-work-text article ul {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .my-work .my-work-text article ul .technologies {
+  border: 1px solid #284B63;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: .5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #284B63;
+  padding: .5em;
+  margin-right: .5em;
+  border-radius: .25em;
+}
+
+body main .contact {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .contact h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: right;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-size: 1.25em;
+  color: #284B63;
+  padding: 0 2em;
+  text-transform: uppercase;
+}
+
+body main .contact .contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-size: 1em;
+}
+
+body main .contact .contact-text a {
+  text-decoration: none;
+  color: #284B63;
+  font-weight: bold;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 0;
+}
+
+body footer a img {
+  width: 24px;
+}
+/*# sourceMappingURL=styles.css.map */
