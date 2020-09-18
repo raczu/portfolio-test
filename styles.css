@@ -451,19 +451,6 @@ body footer a img {
 @media screen and (max-width: 478px) {
   body main .main-info h1 {
     font-size: 2em;
-  }
-  body main .main-info .get-in-touch {
-    font-size: 1em;
-  }
-  body main .main-info .get-in-touch img {
-    width: 16px;
-    margin: 0 0.5em;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  body main .main-info h1 {
-    font-size: 2em;
     padding: 2em 0 .5em 0;
   }
   body main .main-info .get-in-touch {
@@ -476,4 +463,5 @@ body footer a img {
     display: none;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
