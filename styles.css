@@ -461,7 +461,7 @@ body footer a img {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   body main .main-info h1 {
     font-size: 2em;
     padding: 2em 0 .5em 0;
