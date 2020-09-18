@@ -1,34 +1,29 @@
-$('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
-        });
+        }, 1000);
+        return false;
       }
     }
   });
+});
+
+  var i = 0;
 
   $(".menu-btn-items").click( function() {
     $(this).toggleClass("close");
+    i++;
+    if (i==1) {
+      $("body").css({overflow: "hidden"});
+    } else {
+      $("body").css({overflow: "scroll"});
+      i = 0;
+    }
   });
 
   $(".menu-btn-items").click( function() {
@@ -38,6 +33,8 @@ $('a[href*="#"]')
   $(".link").click( function() {
     $(".main-menu").toggleClass("open");
     $(".menu-btn-items").toggleClass("close");
+    $("body").css({overflow: "scroll"});
+    i = 0;
   });
 
   const up_arrow = document.querySelector("#up-arrow");

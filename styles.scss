@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.hidden-overflow {
+    overflow: hidden;
+}
+
 body {
     background-color: #FFFFFF;
     padding: 1.5em;
@@ -319,7 +323,7 @@ body {
                 }
             }
             .open {
-                clip-path: circle(1300px at 90% -10%);
+                clip-path: circle(5000px at 90% -10%);
             }
         }
         main {
@@ -362,7 +366,6 @@ body {
 
 @media screen and (max-width: 478px) {
     body {
-        width: 100%;
         main {
             .main-info {
                 h1 {
@@ -373,6 +376,28 @@ body {
                     img {
                         width: 16px;
                         margin: 0 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        main {
+            .main-info {
+                h1 {
+                    font-size: 2em;
+                    padding: 2em 0 .5em 0;
+                }
+                .get-in-touch {
+                    font-size: 1em;
+                    * {
+                        padding-right: 0.25em;
+                    }
+                    img {
+                        display: none;
                     }
                 }
             }
