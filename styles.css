@@ -439,6 +439,9 @@ body footer a img {
 }
 
 @media screen and (max-width: 478px) {
+  body {
+    width: 100%;
+  }
   body main .main-info h1 {
     font-size: 2em;
   }
