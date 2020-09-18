@@ -338,4 +338,116 @@ body footer {
 body footer a img {
   width: 24px;
 }
+
+@media screen and (max-width: 820px) {
+  body header nav .menu-div .menu-btn {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  body header nav .menu-div .menu-btn .line {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: #353535;
+    left: 20%;
+    -webkit-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+  }
+  body header nav .menu-div .menu-btn .top {
+    top: 30%;
+  }
+  body header nav .menu-div .menu-btn .middle {
+    top: 45%;
+  }
+  body header nav .menu-div .menu-btn .bottom {
+    top: 65%;
+  }
+  body header nav .menu-div .close .top {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 45%;
+  }
+  body header nav .menu-div .close .middle {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 45%;
+  }
+  body header nav .menu-div .close .bottom {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 45%;
+  }
+  body header nav ul {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFFFFF;
+    -webkit-clip-path: circle(100px at 100% -10%);
+            clip-path: circle(100px at 100% -10%);
+    -webkit-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+  }
+  body header nav ul li a {
+    font-size: 2.5em;
+  }
+  body header .open {
+    -webkit-clip-path: circle(1300px at 90% -10%);
+            clip-path: circle(1300px at 90% -10%);
+  }
+  body main .main-info h1 {
+    font-size: 2.5em;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  body main .main-info .get-in-touch {
+    font-size: 1.25em;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  body main section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .about-me h2 {
+    padding: 1em 0;
+  }
+  body main .skills h2 {
+    padding: 1em 0;
+  }
+  body main .my-work h2 {
+    padding: 1em 0;
+  }
+  body main .contact h2 {
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  body main .main-info h1 {
+    font-size: 2em;
+  }
+  body main .main-info .get-in-touch {
+    font-size: 1em;
+  }
+  body main .main-info .get-in-touch img {
+    width: 16px;
+    margin: 0 0.5em;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
