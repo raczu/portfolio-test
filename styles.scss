@@ -1,3 +1,4 @@
+  
 * {
     padding: 0;
     margin: 0;
@@ -245,6 +246,130 @@ body {
         a {
             img {
                 width: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 820px) {
+    
+    body {
+        header {
+            nav {
+                .menu-div {
+                    .menu-btn {
+                        width: 48px;
+                        height: 48px;
+                        position: relative;
+                        z-index: 1;
+                        .line {
+                            position: absolute;
+                            width: 28px;
+                            height: 3px;
+                            background-color: #353535;
+                            left: 20%;
+                            transition: all ease 0.35s;
+                        }
+                        .top {
+                            top: 30%;
+                        }
+                        .middle {
+                            top: 45%;
+                        }
+                        .bottom {
+                            top: 65%;
+                        }
+                    }
+                    .close {
+                        .top {
+                            transform: rotate(45deg);
+                            top: 45%;
+                        }
+                        .middle {
+                            transform: rotate(-45deg);
+                            top: 45%;
+                        }
+                        .bottom {
+                            transform: rotate(-45deg);
+                            top: 45%;
+                        }
+                    }
+                }
+                ul {
+                    position: fixed;
+                    flex-direction: column;
+                    height: 100vh;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FFFFFF;
+                    clip-path: circle(100px at 100% -10%);
+                    transition: all 1.5s ease-out;
+                    li {
+                        a {
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+            .open {
+                clip-path: circle(1300px at 90% -10%);
+            }
+        }
+        main {
+            .main-info {
+                h1 {
+                    font-size: 2.5em;
+                    flex-basis: 100%;
+                }
+                .get-in-touch {
+                    font-size: 1.25em;
+                    flex-basis: 100%;
+                }
+            }
+            section {
+                flex-direction: column;
+            }
+            .about-me {
+                h2 {
+                    padding: 1em 0;
+                }
+            }
+            .skills {
+                h2 {
+                    padding: 1em 0;
+                }
+            }
+            .my-work {
+                h2 {
+                    padding: 1em 0;
+                }
+            }
+            .contact {
+                h2 {
+                    padding: 1em 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 478px) {
+    body {
+        main {
+            .main-info {
+                h1 {
+                    font-size: 2em;
+                }
+                .get-in-touch {
+                    font-size: 1em;
+                    img {
+                        width: 16px;
+                        margin: 0 0.5em;
+                    }
+                }
             }
         }
     }
