@@ -27,6 +27,19 @@ $('a[href*="#"]')
     }
   });
 
+  $(".menu-btn-items").click( function() {
+    $(this).toggleClass("close");
+  });
+
+  $(".menu-btn-items").click( function() {
+    $(".main-menu").toggleClass("open");
+  });
+
+  $(".link").click( function() {
+    $(".main-menu").toggleClass("open");
+    $(".menu-btn-items").toggleClass("close");
+  });
+
   const up_arrow = document.querySelector("#up-arrow");
 
   up_arrow.addEventListener("click", function() {
@@ -38,3 +51,4 @@ $('a[href*="#"]')
   });
 
   element.scroll({ top: 0, left: 0, behavior: 'smooth' });
+
