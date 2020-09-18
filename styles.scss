@@ -387,11 +387,22 @@ body {
 
 @media screen and (max-width: 375px) {
     body {
+        header {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
         main {
             .main-info {
                 h1 {
                     font-size: 2em;
-                    padding: 2em 0 .5em 0;
+                    padding: 1.5em 0 .5em 0;
                 }
                 .get-in-touch {
                     font-size: 1em;
